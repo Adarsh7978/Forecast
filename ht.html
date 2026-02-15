@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-card">
+        <h1>🌤 Weather App</h1>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <!-- ✅ Live Date & Time -->
+        <p id="time" class="time">--</p>
+
+        <div class="weather-info">
+            <!-- Optional dynamic icon later -->
+            <img id="weatherIcon" src="images/clouds.png" alt="Weather Icon">
+
+            <h2 id="cityName">--</h2>
+            <div class="temp" id="temperature">--°C</div>
+            <div class="description" id="description">--</div>
+
+            <!-- ✅ NEW Advanced Data -->
+            <div class="extra-details">
+
+                <p>🌡 Feels Like: <span id="feelsLike">--</span></p>
+                <p> Min / Max: <span id="minMax">--</span></p>
+                <p>🌅 Sunrise: <span id="sunrise">--</span></p>
+                <p>🌇 Sunset: <span id="sunset">--</span></p>
+
+            </div>
+
+            <div class="details">
+                <div>
+                    <span>💧 Humidity</span>
+                    <p id="humidity">--%</p>
+                </div>
+                <div>
+                    <span>🌬 Wind</span>
+                    <p id="wind">-- km/h</p>
+                </div>
+            </div>
+
+            <!-- ✅ Location Button -->
+            <button class="location-btn" onclick="getLocationWeather()">
+                Use My Location 📍
+            </button>
+
+        </div>
+    </div>
+    <div class="clouds">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
