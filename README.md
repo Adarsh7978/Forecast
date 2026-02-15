@@ -48,4 +48,4 @@ This project uses the **OpenWeather API**.
 Open `script.js` and replace:
 
 ```javascript
-const apiKey = "YOUR_API_KEY";
+const apiKey = "d7ce7c445929f95cf5f90283e48649cd";
